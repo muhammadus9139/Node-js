@@ -1,0 +1,18 @@
+// we can manually create it by command node init
+
+{
+  "name": "node-js",
+  "version": "1.0.0",
+  "description": "Node js practice ",
+  "license": "ISC",
+  "author": "usama",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
