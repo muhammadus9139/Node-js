@@ -1,5 +1,7 @@
 
 // Here we use port, we can give port from terminal that will run on that port
+// it is the command of get input from cmd for this code of dynamic port 
+// nodemon commad-line-input.js 9000
 // it is also a dynamic port
 const http=require('http')
 
