@@ -1,3 +1,6 @@
+
+// Here we use port, we can give port from terminal that will run on that port
+// it is also a dynamic port
 const http=require('http')
 
 const arg=process.argv;
