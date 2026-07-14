@@ -1,3 +1,6 @@
+// here we use 2 built-in middlewares 
+// 1- express.urlencoded({extented: false})
+// 2- express.static()
 
 import express from "express";
 import path from 'path'
