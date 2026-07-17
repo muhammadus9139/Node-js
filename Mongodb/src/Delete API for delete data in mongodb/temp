@@ -1,0 +1,1 @@
+50- Delete API for delete data in mongodb, make route for delete request, get id from request params, write code for delete record, delete item from UI, test flow and DB.
