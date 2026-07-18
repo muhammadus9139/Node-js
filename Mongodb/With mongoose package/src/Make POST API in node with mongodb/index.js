@@ -11,16 +11,16 @@ const app=express();
 
    
     app.get("/",async(req,resp)=>{
-         const model= await studentModel.find();
+         const model= await studentModel.find(); // .find() is used to display record from database
          resp.send(model)
     })
 
     // use middleware to save data using post 
-    app.use(express.json());
-
+    app.use(express.json()); // we can use req.body using this
+    // use post route to save new record
     app.post("/save",async(req,resp)=>{
         console.log(req.body);
-        const {name,email,age}=req.body
+        const {name,email,age}=req.body; // here it is destructuring
         if(!name || !email || !age){
            resp.send({
             message:"data not stored",
@@ -29,8 +29,8 @@ const app=express();
            })
           return false
         }
-        
-        const studentdata= await studentModel.create(req.body) 
+
+        const studentdata= await studentModel.create(req.body); //  .create will used to save new record
         resp.send({
             message:"data stored",
             success: true,
