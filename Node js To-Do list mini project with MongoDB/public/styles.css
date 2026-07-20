@@ -1,0 +1,608 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Animated Background */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(circle at 20% 20%,rgba(59,130,246,.25),transparent 25%),
+    radial-gradient(circle at 80% 80%,rgba(139,92,246,.25),transparent 30%),
+    radial-gradient(circle at 50% 50%,rgba(16,185,129,.15),transparent 40%);
+    animation:moveBackground 15s linear infinite alternate;
+    z-index:-1;
+}
+
+@keyframes moveBackground{
+
+    from{
+        transform:translateY(-30px) scale(1);
+    }
+
+    to{
+        transform:translateY(30px) scale(1.2);
+    }
+
+}
+
+/* Navbar */
+
+nav{
+
+    position:sticky;
+    top:0;
+    backdrop-filter:blur(15px);
+    background:rgba(255,255,255,.08);
+    border-bottom:1px solid rgba(255,255,255,.2);
+    padding:18px 60px;
+    z-index:1000;
+
+}
+
+nav ul{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:35px;
+    list-style:none;
+
+}
+
+nav a{
+
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    padding:12px 22px;
+    border-radius:12px;
+    transition:.4s;
+    position:relative;
+    overflow:hidden;
+
+}
+
+nav a::before{
+
+    content:"";
+    position:absolute;
+    width:0;
+    height:100%;
+    left:0;
+    top:0;
+    background:linear-gradient(90deg,#3b82f6,#9333ea);
+    z-index:-1;
+    transition:.4s;
+
+}
+
+nav a:hover::before{
+
+    width:100%;
+
+}
+
+nav a:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* Heading */
+
+h1{
+
+    text-align:center;
+    font-size:60px;
+    margin-top:90px;
+    letter-spacing:2px;
+    animation:fadeDown 1s ease;
+
+}
+
+@keyframes fadeDown{
+
+    from{
+
+        opacity:0;
+        transform:translateY(-70px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Form */
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+        transform:scale(.7);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:scale(1);
+
+    }
+
+}
+
+input:not([type="checkbox"]){
+    width:100%;
+    padding:15px;
+    margin:15px 0;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    font-size:17px;
+    transition:.3s;
+}
+
+
+/* input:focus{
+
+    transform:scale(1.03);
+    box-shadow:0 0 20px #3b82f6;
+
+} */
+
+/* Button */
+
+/* button{
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(90deg,#2563eb,#9333ea);
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.4s;
+
+} */
+
+.delete-all-btn{
+    display:inline-block;
+    min-width:220px;
+    padding:12px 24px;
+    border:none;
+    border-radius:10px;
+    background:#dc2626;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.delete-all-btn:hover{
+    background:#b91c1c;
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(220,38,38,.35);
+}
+
+
+button:hover{
+
+    transform:translateY(-6px);
+    box-shadow:0 10px 30px rgba(59,130,246,.5);
+
+}
+
+/* Table */
+
+table{
+
+    width:90%;
+    margin:60px auto;
+    border-collapse:collapse;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    overflow:hidden;
+    animation:fadeUp 1s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+th{
+
+    background:#2563eb;
+    color:white;
+    padding:18px;
+    font-size:18px;
+
+}
+
+td{
+
+    padding:16px;
+    text-align:center;
+    border-bottom:1px solid rgba(255,255,255,.15);
+
+}
+
+tr{
+
+    transition:.3s;
+
+}
+
+tr:hover{
+
+    background:rgba(255,255,255,.12);
+    transform:scale(1.01);
+
+}
+
+/* Links */
+
+a{
+
+    color:#60a5fa;
+    transition:.3s;
+
+}
+
+a:hover{
+
+    color:white;
+
+}
+
+/* Cards */
+
+
+
+.card:hover{
+
+    transform:translateY(-15px) rotate(2deg);
+    box-shadow:0 25px 50px rgba(0,0,0,.35);
+
+}
+
+/* Floating Animation */
+
+.float{
+
+    animation:floating 3s ease-in-out infinite;
+
+}
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#999da5;
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111827;
+
+}
+
+/* ===========================
+      Add Task Page Only
+=========================== */
+
+.add-task-container{
+    display:flex;
+    justify-content:center;
+    margin-top:10px;
+}
+
+.add-task-form{
+    width:520px;
+    background:rgba(255,255,255,.10);
+    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter:blur(18px);
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 20px 45px rgba(0,0,0,.30);
+}
+
+.add-task-form input,
+.add-task-form textarea{
+    width:100%;
+    margin-bottom:10px;
+    padding:15px 18px;
+    border:none;
+    border-radius:10px;
+    background:rgba(255,255,255,.08);
+    color:#fff;
+    font-size:16px;
+    transition:.3s;
+}
+
+.add-task-form textarea{
+    height:170px;
+    resize:vertical;
+}
+
+.add-task-form input::placeholder,
+.add-task-form textarea::placeholder{
+    color:#cbd5e1;
+}
+
+.add-task-form input:focus,
+.add-task-form textarea:focus{
+    outline:none;
+    background:rgba(255,255,255,.12);
+    box-shadow:0 0 0 3px rgba(59,130,246,.35);
+}
+
+.add-task-form button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#1c397b;
+    color:white;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.add-task-form button:hover{
+    background:#224bbc;
+    transform:translateY(-2px);
+}
+
+/* Task List Only */
+
+
+.task-actions{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-top:16px;
+}
+
+.delete-btn,
+.update-btn{
+    margin-top:0;
+}
+
+
+.task-container{
+    width:90%;
+    max-width:900px;
+    margin:50px auto;
+}
+
+.task-list{
+    padding:0;
+    margin:0;
+}
+
+.task-card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:14px;
+    padding:20px;
+    margin-bottom:20px;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.task-card:hover{
+    transform:translateY(-3px);
+    border-color:#3b82f6;
+}
+
+.task-title{
+    font-size:22px;
+    font-weight:600;
+    color:#ffffff;
+    margin-bottom:10px;
+}
+
+.task-description{
+    color:#cbd5e1;
+    line-height:1.6;
+    font-size:15px;
+}
+
+/* ==========================
+        Delete Button
+========================== */
+
+.delete-btn{
+    display:inline-block;
+    padding:10px 22px;
+    background:#dc2626;
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:500;
+    border-radius:8px;
+    transition:.3s ease;
+}
+
+.delete-btn:hover{
+    background:#b91c1c;
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(220,38,38,.35);
+}
+
+.delete-btn:active{
+    transform:scale(.96);
+}
+
+.delete-btn,
+.update-btn{
+    display:inline-block;
+    padding:10px 22px;
+    margin:0;
+}
+
+/* ==========================
+        Update Button
+========================== */
+
+.update-btn{
+    display:inline-block;
+    padding:10px 22px;
+    background:#16a34a;
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:500;
+    border-radius:8px;
+    transition:.3s ease;
+}
+
+.update-btn:hover{
+    background:#15803d;
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(22,163,74,.35);
+}
+
+.update-btn:active{
+    transform:scale(.96);
+}
+
+
+
+/* ==========================
+      Delete Selected Button
+========================== */
+
+.bulk-actions{
+    width:100%;
+    margin-bottom:20px;
+    display:flex;
+    justify-content:flex-start;
+}
+
+/* .delete-all-btn{
+    display:inline-block;
+    width:auto;
+    min-width:220px;
+    padding:12px 24px;
+} */
+
+.delete-all-btn:hover{
+    background:#b91c1c;
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(220,38,38,.35);
+}
+
+
+/* ==========================
+         Checkbox
+========================== */
+
+.task-checkbox{
+    width:18px;
+    height:18px;
+    margin:0;
+    flex-shrink:0;
+}
+
+@media (max-width:768px){
+
+    .task-actions{
+        display:flex;
+        flex-wrap:wrap;
+        align-items:center;
+        gap:10px;
+    }
+
+    .delete-btn,
+    .update-btn{
+        flex:1;
+        text-align:center;
+    }
+
+    .bulk-actions{
+        justify-content:center;
+    }
+
+    .delete-all-btn{
+        width:100%;
+        max-width:320px;
+    }
+
+    h1{
+        font-size:38px;
+    }
+}
