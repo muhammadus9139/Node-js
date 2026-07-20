@@ -1,0 +1,12 @@
+
+// Node js To-do project with mongodb
+1- Node js TO-DO project, make package json , install package, make server, make files and routes , make common navbar.
+2- Add CSS to navigation, make file for css, add file to all pages, write css for navbar.
+3- Make Add and update task form, make add task form , add style for add task page, make update task form, add style for update task page.
+4- Add task , install mongodb npm package, define db config, create db Name and collection, Add data to database.
+5- Task listing, get data from database, display on UI m apply style.
+6- Delete task, make UI element for delete task, Add CSS , make route and delete task.
+7- Populate data in form fields, make button for update task, make route for populate datam fetch and display task data.
+8- Update task data, update action update task form, make route for update data, check task is uploaded or not.
+9- Delete multiple task, add checkbox with each item, add delete button and style, write code for delete multiple task.
+ 
