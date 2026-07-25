@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Express-js/Template-engine-with-form-data/views/result.ejs",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784994616974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784994616974,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html>\r\n\r\n<head>\r\n    <title>Result</title>\r\n</head>\r\n\r\n\r\n<body>\r\n\r\n\r\n<h1>Submitted Data</h1>\r\n\r\n\r\n<h2>\r\n    Username: <%= username %>\r\n</h2>\r\n\r\n\r\n<h2>\r\n    Email: <%= email %>\r\n</h2>\r\n\r\n\r\n</body>\r\n\r\n</html>"
+        }
+    ]
+}

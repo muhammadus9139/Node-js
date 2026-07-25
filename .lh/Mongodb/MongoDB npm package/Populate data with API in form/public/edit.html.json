@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Mongodb/MongoDB npm package/Populate data with API in form/public/edit.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784997651439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784997651439,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html>\r\n\r\n<head>\r\n    <title>Edit User</title>\r\n</head>\r\n\r\n\r\n<body>\r\n\r\n\r\n<h1>Edit User</h1>\r\n\r\n\r\n<form>\r\n\r\n\r\n<label>Name:</label>\r\n\r\n<input type=\"text\" id=\"name\">\r\n\r\n\r\n<br><br>\r\n\r\n\r\n<label>Email:</label>\r\n\r\n<input type=\"email\" id=\"email\">\r\n\r\n\r\n<br><br>\r\n\r\n\r\n<label>Age:</label>\r\n\r\n<input type=\"number\" id=\"age\">\r\n\r\n\r\n</form>\r\n\r\n\r\n\r\n<script>\r\n\r\n\r\nlet id = \"USER_ID_HERE\";\r\n\r\n\r\nfetch(\"/user/\" + id)\r\n\r\n.then(res=>res.json())\r\n\r\n.then(data=>{\r\n\r\n\r\n    let user = data.data;\r\n\r\n\r\n    document.getElementById(\"name\").value = user.name;\r\n\r\n    document.getElementById(\"email\").value = user.email;\r\n\r\n    document.getElementById(\"age\").value = user.age;\r\n\r\n\r\n});\r\n\r\n\r\n</script>\r\n\r\n\r\n</body>\r\n\r\n</html>"
+        }
+    ]
+}

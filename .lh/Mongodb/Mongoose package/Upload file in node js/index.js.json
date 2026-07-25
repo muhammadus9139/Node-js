@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Mongodb/Mongoose package/Upload file in node js/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784999099143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784999099143,
+            "name": "Commit-0",
+            "content": "const express = require(\"express\");\r\nconst multer = require(\"multer\");\r\nconst path = require(\"path\");\r\n\r\n\r\nconst app = express();\r\n\r\n\r\n// Upload folder configuration\r\n\r\nconst storage = multer.diskStorage({\r\n\r\n    destination:function(req,file,cb){\r\n\r\n        cb(null,\"uploads\");\r\n\r\n    },\r\n\r\n\r\n    filename:function(req,file,cb){\r\n\r\n        cb(null,Date.now()+path.extname(file.originalname));\r\n\r\n    }\r\n\r\n});\r\n\r\n\r\n\r\nconst upload = multer({\r\n\r\n    storage:storage\r\n\r\n});\r\n\r\n\r\n\r\n\r\n// GET Route\r\n\r\napp.get(\"/\",(req,res)=>{\r\n\r\n    res.sendFile(__dirname + \"/public/upload.html\");\r\n\r\n});\r\n\r\n\r\n\r\n\r\n\r\n// POST Route for Upload\r\n\r\napp.post(\"/upload\", upload.single(\"file\"), (req,res)=>{\r\n\r\n\r\n    res.json({\r\n\r\n        success:true,\r\n\r\n        message:\"File Uploaded Successfully\",\r\n\r\n        file:req.file\r\n\r\n    });\r\n\r\n\r\n});\r\n\r\n\r\n\r\n\r\n\r\napp.listen(3000,()=>{\r\n\r\n    console.log(\"Server running on port 3000\");\r\n\r\n});"
+        }
+    ]
+}

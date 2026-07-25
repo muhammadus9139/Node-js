@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Express-js/Set and get session in node js/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784995661154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784995661154,
+            "name": "Commit-0",
+            "content": "import express from \"express\";\r\nimport session from \"express-session\";\r\nimport path from \"path\";\r\n\r\n\r\nconst app = express();\r\n\r\n\r\napp.use(express.urlencoded({\r\n    extended:true\r\n}));\r\n\r\n\r\n// Session Middleware\r\n\r\napp.use(session({\r\n\r\n    secret:\"mySecretKey\",\r\n\r\n    resave:false,\r\n\r\n    saveUninitialized:false\r\n\r\n}));\r\n\r\n\r\n\r\n// Render HTML Form\r\n\r\napp.get(\"/\",(req,res)=>{\r\n\r\n    res.sendFile(\r\n        path.join(process.cwd(),\"login.html\")\r\n    );\r\n\r\n});\r\n\r\n\r\n\r\n\r\n// Set Session\r\n\r\napp.post(\"/login\",(req,res)=>{\r\n\r\n\r\n    const {name,email}=req.body;\r\n\r\n\r\n    req.session.userName=name;\r\n\r\n    req.session.userEmail=email;\r\n\r\n\r\n\r\n    res.send(`\r\n\r\n        <h1>Session Stored</h1>\r\n\r\n        <p>Name: ${name}</p>\r\n\r\n        <p>Email: ${email}</p>\r\n\r\n        <a href=\"/profile\">\r\n        Check Session\r\n        </a>\r\n\r\n    `);\r\n\r\n\r\n});\r\n\r\n\r\n\r\n\r\n// Get Session\r\n\r\napp.get(\"/profile\",(req,res)=>{\r\n\r\n\r\n    const name=req.session.userName;\r\n\r\n    const email=req.session.userEmail;\r\n\r\n\r\n\r\n    res.send(`\r\n\r\n        <h1>User Profile</h1>\r\n\r\n        <p>Name: ${name}</p>\r\n\r\n        <p>Email: ${email}</p>\r\n\r\n    `);\r\n\r\n\r\n});\r\n\r\n\r\n\r\n\r\n\r\napp.listen(3000,()=>{\r\n\r\n    console.log(\"Server running on port 3000\");\r\n\r\n});"
+        }
+    ]
+}

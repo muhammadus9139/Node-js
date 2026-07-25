@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Mongodb/Mongoose package/Connect mongodb with mongoose/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784997807042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784997807042,
+            "name": "Commit-0",
+            "content": "const mongoose = require(\"mongoose\");\r\n\r\n\r\n// MongoDB Connection\r\n\r\nmongoose.connect(\"mongodb://127.0.0.1:27017/studentDB\")\r\n.then(()=>{\r\n\r\n    console.log(\"MongoDB Connected Successfully\");\r\n\r\n})\r\n.catch((error)=>{\r\n\r\n    console.log(error);\r\n\r\n});\r\n\r\n\r\n\r\n// Create Schema\r\n\r\nconst userSchema = new mongoose.Schema({\r\n\r\n    name:String,\r\n\r\n    email:String,\r\n\r\n    age:Number\r\n\r\n});\r\n\r\n\r\n\r\n// Create Model\r\n\r\nconst User = mongoose.model(\"users\", userSchema);\r\n\r\n\r\n\r\n// Fetch Data\r\n\r\nasync function getData(){\r\n\r\n    let data = await User.find();\r\n\r\n    console.log(data);\r\n\r\n}\r\n\r\n\r\ngetData();"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Express-js/Send Mail with node js/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784995734460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784995734460,
+            "name": "Commit-0",
+            "content": "import express from \"express\";\r\nimport nodemailer from \"nodemailer\";\r\nimport path from \"path\";\r\n\r\n\r\nconst app = express();\r\n\r\n\r\napp.use(express.urlencoded({\r\n    extended:true\r\n}));\r\n\r\napp.use(express.json());\r\n\r\n\r\n\r\n// Render Form\r\n\r\napp.get(\"/\",(req,res)=>{\r\n\r\n    res.sendFile(\r\n        path.join(process.cwd(),\"mail.html\")\r\n    );\r\n\r\n});\r\n\r\n\r\n\r\n\r\n// Send Mail From Form\r\n\r\napp.post(\"/send-mail\",async(req,res)=>{\r\n\r\n\r\n    const {\r\n        name,\r\n        email,\r\n        message\r\n\r\n    } = req.body;\r\n\r\n\r\n\r\n    let transporter = nodemailer.createTransport({\r\n\r\n        service:\"gmail\",\r\n\r\n        auth:{\r\n\r\n            user:\"yourgmail@gmail.com\",\r\n\r\n            pass:\"your-app-password\"\r\n\r\n        }\r\n\r\n    });\r\n\r\n\r\n\r\n    let info = await transporter.sendMail({\r\n\r\n        from:\"yourgmail@gmail.com\",\r\n\r\n        to:email,\r\n\r\n        subject:\"Testing Mail\",\r\n\r\n        text:\r\n        `\r\n        Name: ${name}\r\n        Message: ${message}\r\n        `\r\n\r\n    });\r\n\r\n\r\n\r\n    res.send({\r\n\r\n        message:\"Email Sent Successfully\",\r\n\r\n        id:info.messageId\r\n\r\n    });\r\n\r\n\r\n\r\n});\r\n\r\n\r\n\r\n\r\n\r\napp.listen(3000,()=>{\r\n\r\nconsole.log(\"Server running on port 3000\");\r\n\r\n});"
+        }
+    ]
+}

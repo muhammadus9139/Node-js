@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Express-js/Understand express js flow/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784992054256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784992054256,
+            "name": "Commit-0",
+            "content": "const express = require(\"express\");\r\n\r\nconst app = express();\r\n\r\nconst PORT = 3000;\r\n\r\n\r\n// Express JS Flow\r\napp.get(\"/\", (req, res) => {\r\n\r\n    console.log(\"Request received\");\r\n\r\n    res.send(\"Welcome to Express JS Flow\");\r\n\r\n});\r\n\r\n\r\n/*\r\n    Params in Express JS\r\n\r\n    URL:\r\n    localhost:3000/user/101\r\n\r\n    101 is parameter\r\n*/\r\n\r\napp.get(\"/user/:id\", (req, res) => {\r\n\r\n    let userId = req.params.id;\r\n\r\n    res.send(`User ID is ${userId}`);\r\n\r\n});\r\n\r\n\r\n// Multiple Params\r\n\r\napp.get(\"/product/:category/:id\", (req, res) => {\r\n\r\n    let category = req.params.category;\r\n    let id = req.params.id;\r\n\r\n\r\n    res.send(\r\n        `Product Category: ${category}, Product ID: ${id}`\r\n    );\r\n\r\n});\r\n\r\n\r\n// Response Methods\r\n\r\napp.get(\"/response\", (req, res) => {\r\n\r\n\r\n    // Send text response\r\n    // res.send(\"Hello User\");\r\n\r\n\r\n    // Send JSON response\r\n    res.json({\r\n        name: \"Usama\",\r\n        role: \"Developer\",\r\n        skill: \"Node JS\"\r\n    });\r\n\r\n\r\n});\r\n\r\n\r\napp.listen(PORT, () => {\r\n    console.log(`Server running on port ${PORT}`);\r\n});"
+        }
+    ]
+}

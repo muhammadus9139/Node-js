@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Express-js/Make 404 page and improvement/404.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784993420643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784993420643,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html>\r\n\r\n<head>\r\n    <title>404 Page</title>\r\n</head>\r\n\r\n\r\n<body>\r\n\r\n\r\n<h1>\r\n    404 - Page Not Found\r\n</h1>\r\n\r\n\r\n<p>\r\n    Sorry, the page you are looking for does not exist.\r\n</p>\r\n\r\n\r\n<a href=\"/\">\r\n    Go Home\r\n</a>\r\n\r\n\r\n</body>\r\n\r\n</html>"
+        }
+    ]
+}

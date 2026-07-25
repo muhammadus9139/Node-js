@@ -1,0 +1,97 @@
+MongoDB Atlas
+==============
+
+What is MongoDB Atlas?
+
+MongoDB Atlas is a cloud-based database service provided by MongoDB.
+
+It allows us to create, manage and access MongoDB databases on cloud without installing MongoDB locally.
+
+
+Uses of MongoDB Atlas:
+
+1. Cloud database hosting
+2. Access database from anywhere
+3. Automatic backup
+4. Security features
+5. Easy scaling
+6. Connect with applications easily
+
+
+
+MongoDB Atlas Setup:
+
+Step 1:
+Create MongoDB Atlas Account
+
+Website:
+https://www.mongodb.com/atlas
+
+
+Step 2:
+Create Organization
+
+Organization is a group where we manage projects and clusters.
+
+
+
+Step 3:
+Create Project
+
+Project contains database clusters.
+
+
+
+Step 4:
+Create Cluster
+
+Cluster is a collection of servers where MongoDB databases are stored.
+
+
+
+Step 5:
+Create Database
+
+Inside cluster:
+
+Database
+    |
+    Collection
+        |
+        Documents
+
+
+
+Example:
+
+Database:
+studentDB
+
+
+Collection:
+users
+
+
+Documents:
+
+{
+ name:"Ali",
+ email:"ali@gmail.com",
+ age:20
+}
+
+
+
+MongoDB Atlas Components:
+
+Organization
+        |
+        Project
+        |
+        Cluster
+        |
+        Database
+        |
+        Collection
+        |
+        Document

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Express-js/Express js basics/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784991954995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784991954995,
+            "name": "Commit-0",
+            "content": "const express = require(\"express\");\r\n\r\nconst app = express();\r\n\r\nconst PORT = 3000;\r\n\r\n\r\napp.get(\"/\", (req, res) => {\r\n    res.send(\"Hello Express JS\");\r\n});\r\n\r\n\r\napp.listen(PORT, () => {\r\n    console.log(`Server running on port ${PORT}`);\r\n});"
+        }
+    ]
+}

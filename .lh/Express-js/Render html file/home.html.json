@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Express-js/Render html file/home.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784993217543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784993217543,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <title>Home Page</title>\r\n</head>\r\n\r\n<body>\r\n\r\n<h1>Welcome to Home Page</h1>\r\n\r\n<p>This HTML file is rendered using Express JS</p>\r\n\r\n</body>\r\n</html>"
+        }
+    ]
+}

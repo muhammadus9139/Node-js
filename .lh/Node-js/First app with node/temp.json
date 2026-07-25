@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Node-js/First app with node/temp",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784988014269,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784988014269,
+            "name": "Commit-0",
+            "content": "\r\n3- First app with node, make folder and file, write some basic code, how to execute code, file system (Just to show), REPL example.\r\n"
+        }
+    ]
+}

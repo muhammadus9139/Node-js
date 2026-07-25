@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Mongodb/MongoDB npm package/Connect mongodb with node js/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1784997008594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1784997016976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,21 @@\n-index.js\n\\ No newline at end of file\n+const { MongoClient } = require(\"mongodb\");\r\n+\r\n+const url = \"mongodb://127.0.0.1:27017\";\r\n+\r\n+const client = new MongoClient(url);\r\n+\r\n+\r\n+async function connectDB() {\r\n+\r\n+    let result = await client.connect();\r\n+\r\n+    console.log(\"MongoDB Connected Successfully\");\r\n+\r\n+    let db = result.db(\"studentDB\");\r\n+\r\n+    console.log(\"Database Name:\", db.databaseName);\r\n+\r\n+}\r\n+\r\n+\r\n+connectDB();\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1784997008594,
+            "name": "Commit-0",
+            "content": "index.js"
+        }
+    ]
+}

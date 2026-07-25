@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Express-js/Built-in middleware in express js/public/style.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784994133821,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784994133821,
+            "name": "Commit-0",
+            "content": "body {\r\n\r\n    background-color: lightblue;\r\n    text-align: center;\r\n    font-family: Arial;\r\n\r\n}\r\n\r\n\r\nh1 {\r\n\r\n    color: darkblue;\r\n\r\n}"
+        }
+    ]
+}

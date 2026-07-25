@@ -1,0 +1,11 @@
+# Check Node.js Version
+node -v
+
+# Check npm Version
+npm -v
+
+# Create package.json
+npm init -y
+
+# Run Program
+node index.js

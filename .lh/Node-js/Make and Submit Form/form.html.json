@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Node-js/Make and Submit Form/form.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784989545321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784989545321,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <title>Node Form</title>\r\n</head>\r\n<body>\r\n\r\n    <h1>User Form</h1>\r\n\r\n    <form action=\"/submit\" method=\"POST\">\r\n\r\n        <input\r\n            type=\"text\"\r\n            name=\"username\"\r\n            placeholder=\"Enter Name\"\r\n        >\r\n        <br><br>\r\n\r\n        <input\r\n            type=\"email\"\r\n            name=\"email\"\r\n            placeholder=\"Enter Email\"\r\n        >\r\n        <br><br>\r\n\r\n        <button type=\"submit\">\r\n            Submit\r\n        </button>\r\n\r\n    </form>\r\n\r\n</body>\r\n</html>"
+        }
+    ]
+}

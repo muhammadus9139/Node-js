@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Express-js/Route middleware/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784993958615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784993958615,
+            "name": "Commit-0",
+            "content": "const express = require(\"express\");\r\n\r\nconst app = express();\r\n\r\nconst port = 3000;\r\n\r\n\r\n// Route Middleware 1\r\n\r\nconst checkLogin = (req, res, next) => {\r\n\r\n    console.log(\"Login Middleware\");\r\n\r\n    const login = true;\r\n\r\n    if(login){\r\n        next();\r\n    }\r\n    else{\r\n        res.send(\"Please Login First\");\r\n    }\r\n\r\n};\r\n\r\n\r\n// Route Middleware 2\r\n\r\nconst checkAdmin = (req, res, next) => {\r\n\r\n    console.log(\"Admin Middleware\");\r\n\r\n    const admin = true;\r\n\r\n    if(admin){\r\n        next();\r\n    }\r\n    else{\r\n        res.send(\"Access Denied\");\r\n    }\r\n\r\n};\r\n\r\n\r\n// Apply two route middleware\r\n\r\napp.get(\r\n    \"/dashboard\",\r\n    checkLogin,\r\n    checkAdmin,\r\n    (req, res)=>{\r\n\r\n        res.send(\"Dashboard Page\");\r\n\r\n    }\r\n);\r\n\r\n\r\n// Another route\r\n\r\napp.get(\"/\", (req,res)=>{\r\n\r\n    res.send(\"Home Page\");\r\n\r\n});\r\n\r\n\r\napp.listen(port, ()=>{\r\n\r\n    console.log(`Server running on port ${port}`);\r\n\r\n});"
+        }
+    ]
+}

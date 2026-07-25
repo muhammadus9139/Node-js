@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MongoDB Data</title>
+</head>
+
+<body>
+
+<h1>Users List</h1>
+
+
+<% users.forEach((user)=>{ %>
+
+    <h3>Name: <%= user.name %></h3>
+    <p>Email: <%= user.email %></p>
+    <p>Age: <%= user.age %></p>
+
+    <hr>
+
+<% }) %>
+
+
+</body>
+
+</html>

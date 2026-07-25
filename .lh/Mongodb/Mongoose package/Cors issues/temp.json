@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Mongodb/Mongoose package/Cors issues/temp",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784998119516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784998119516,
+            "name": "Commit-0",
+            "content": "Cors issues , what is cors issues, understand issues with API call, fix cors issues, test and verify issues.\r\n"
+        }
+    ]
+}

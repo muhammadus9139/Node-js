@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Express-js/Render html file/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784993245276,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784993245276,
+            "name": "Commit-0",
+            "content": "import express from \"express\";\r\nimport path from \"path\";\r\n\r\nconst app = express();\r\n\r\napp.get(\"/\", (req,res)=>{\r\n\r\n    const filePath = path.join(process.cwd(),\"home.html\");\r\n\r\n    res.sendFile(filePath);\r\n\r\n});\r\n\r\n\r\napp.get(\"/about\",(req,res)=>{\r\n\r\n    const filePath = path.join(process.cwd(),\"about.html\");\r\n\r\n    res.sendFile(filePath);\r\n\r\n});\r\n\r\n\r\napp.listen(3000,()=>{\r\n    console.log(\"Server running on port 3000\");\r\n});"
+        }
+    ]
+}

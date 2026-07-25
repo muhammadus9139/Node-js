@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Mongodb/Mongodb Atlas/notes.txt",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784999321836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784999321836,
+            "name": "Commit-0",
+            "content": "MongoDB Atlas\r\n==============\r\n\r\nWhat is MongoDB Atlas?\r\n\r\nMongoDB Atlas is a cloud-based database service provided by MongoDB.\r\n\r\nIt allows us to create, manage and access MongoDB databases on cloud without installing MongoDB locally.\r\n\r\n\r\nUses of MongoDB Atlas:\r\n\r\n1. Cloud database hosting\r\n2. Access database from anywhere\r\n3. Automatic backup\r\n4. Security features\r\n5. Easy scaling\r\n6. Connect with applications easily\r\n\r\n\r\n\r\nMongoDB Atlas Setup:\r\n\r\nStep 1:\r\nCreate MongoDB Atlas Account\r\n\r\nWebsite:\r\nhttps://www.mongodb.com/atlas\r\n\r\n\r\nStep 2:\r\nCreate Organization\r\n\r\nOrganization is a group where we manage projects and clusters.\r\n\r\n\r\n\r\nStep 3:\r\nCreate Project\r\n\r\nProject contains database clusters.\r\n\r\n\r\n\r\nStep 4:\r\nCreate Cluster\r\n\r\nCluster is a collection of servers where MongoDB databases are stored.\r\n\r\n\r\n\r\nStep 5:\r\nCreate Database\r\n\r\nInside cluster:\r\n\r\nDatabase\r\n    |\r\n    Collection\r\n        |\r\n        Documents\r\n\r\n\r\n\r\nExample:\r\n\r\nDatabase:\r\nstudentDB\r\n\r\n\r\nCollection:\r\nusers\r\n\r\n\r\nDocuments:\r\n\r\n{\r\n name:\"Ali\",\r\n email:\"ali@gmail.com\",\r\n age:20\r\n}\r\n\r\n\r\n\r\nMongoDB Atlas Components:\r\n\r\nOrganization\r\n        |\r\n        Project\r\n        |\r\n        Cluster\r\n        |\r\n        Database\r\n        |\r\n        Collection\r\n        |\r\n        Document"
+        }
+    ]
+}

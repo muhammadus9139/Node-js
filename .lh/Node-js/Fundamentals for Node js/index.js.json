@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Node-js/Fundamentals for Node js/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784988425672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784988425672,
+            "name": "Commit-0",
+            "content": "// Import Data\r\nimport { studentName, university, semester } from \"./data.js\";\r\n\r\n// Import Functions\r\nimport { add, multiply, greet } from \"./functions.js\";\r\n\r\n// Variables\r\nconsole.log(\"Student:\", studentName);\r\nconsole.log(\"University:\", university);\r\nconsole.log(\"Semester:\", semester);\r\n\r\n// Functions\r\nconsole.log(greet(studentName));\r\nconsole.log(\"Addition:\", add(10, 20));\r\nconsole.log(\"Multiplication:\", multiply(5, 6));\r\n\r\n// Conditions\r\nlet age = 20;\r\n\r\nif (age >= 18) {\r\n    console.log(\"Eligible to Vote\");\r\n} else {\r\n    console.log(\"Not Eligible\");\r\n}\r\n\r\n// Loops\r\nconsole.log(\"\\nFor Loop\");\r\nfor (let i = 1; i <= 5; i++) {\r\n    console.log(i);\r\n}\r\n\r\n// Arrays\r\nconst subjects = [\"Java\", \"Node.js\", \"MongoDB\", \"React\"];\r\n\r\nconsole.log(\"\\nSubjects\");\r\nsubjects.forEach(subject => {\r\n    console.log(subject);\r\n});\r\n\r\n// Objects\r\nconst student = {\r\n    name: \"Muhammad Usama\",\r\n    department: \"Computer Science\",\r\n    cgpa: 3.5\r\n};\r\n\r\nconsole.log(\"\\nStudent Object\");\r\nconsole.log(student);\r\nconsole.log(student.name);\r\nconsole.log(student.department);\r\nconsole.log(student.cgpa);"
+        }
+    ]
+}

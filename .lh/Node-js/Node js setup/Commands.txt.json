@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Node-js/Node js setup/Commands.txt",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784987796429,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784987796429,
+            "name": "Commit-0",
+            "content": "# Check Node.js Version\r\nnode -v\r\n\r\n# Check npm Version\r\nnpm -v\r\n\r\n# Create package.json\r\nnpm init -y\r\n\r\n# Run Program\r\nnode index.js"
+        }
+    ]
+}
