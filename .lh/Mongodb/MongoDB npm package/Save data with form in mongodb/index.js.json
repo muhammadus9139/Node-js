@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Mongodb/MongoDB npm package/Save data with form in mongodb/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784997335310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784997335310,
+            "name": "Commit-0",
+            "content": "const express = require(\"express\");\r\nconst { MongoClient } = require(\"mongodb\");\r\n\r\nconst app = express();\r\n\r\nconst url = \"mongodb://127.0.0.1:27017\";\r\n\r\nconst client = new MongoClient(url);\r\n\r\n\r\n// Middleware\r\napp.use(express.urlencoded({extended:true}));\r\n\r\n\r\n// Load HTML Form\r\napp.get(\"/\", (req,res)=>{\r\n\r\n    res.sendFile(__dirname + \"/public/form.html\");\r\n\r\n});\r\n\r\n\r\n\r\n// MongoDB Connection\r\n\r\nasync function dbConnect(){\r\n\r\n    let result = await client.connect();\r\n\r\n    let db = result.db(\"studentDB\");\r\n\r\n    return db.collection(\"users\");\r\n\r\n}\r\n\r\n\r\n\r\n// Save Data API\r\n\r\napp.post(\"/save-user\", async(req,res)=>{\r\n\r\n\r\n    let collection = await dbConnect();\r\n\r\n\r\n    let data = {\r\n        name:req.body.name,\r\n        email:req.body.email,\r\n        age:req.body.age\r\n    };\r\n\r\n\r\n    let result = await collection.insertOne(data);\r\n\r\n\r\n    res.send({\r\n        success:true,\r\n        message:\"Data Saved Successfully\",\r\n        result:result\r\n    });\r\n\r\n\r\n});\r\n\r\n\r\n\r\napp.listen(3000,()=>{\r\n\r\n    console.log(\"Server running on port 3000\");\r\n\r\n});"
+        }
+    ]
+}

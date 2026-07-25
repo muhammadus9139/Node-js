@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Node-js/External Package and package.json/commands.txt",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784988779141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784988779141,
+            "name": "Commit-0",
+            "content": "# Create package.json\r\nnpm init -y\r\n\r\n# Install colors package\r\nnpm install colors\r\n\r\n# Run Program\r\nnode index.js"
+        }
+    ]
+}

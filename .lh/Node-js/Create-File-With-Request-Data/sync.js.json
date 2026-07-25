@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Node-js/Create-File-With-Request-Data/sync.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784989769776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784989769776,
+            "name": "Commit-0",
+            "content": "// Create file with requested data\r\n// Create file with synchronous way\r\n\r\nconst http = require('http');\r\nconst fs = require('fs');\r\n\r\nconst server = http.createServer((req, res) => {\r\n\r\n    let data = [];\r\n\r\n    req.on('data', (chunk) => {\r\n        data.push(chunk);\r\n    });\r\n\r\n    req.on('end', () => {\r\n\r\n        let bufferData = Buffer.concat(data);\r\n        let readableData = bufferData.toString();\r\n\r\n        fs.writeFileSync(\"data.txt\", readableData);\r\n\r\n        res.write(\"File created successfully using sync way\");\r\n        res.end();\r\n    });\r\n\r\n});\r\n\r\nserver.listen(3000, () => {\r\n    console.log(\"Server running on port 3000\");\r\n});"
+        }
+    ]
+}

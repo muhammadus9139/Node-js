@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Express-js/MVC-Architecture-with-node-js/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784994770619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784994770619,
+            "name": "Commit-0",
+            "content": "import express from \"express\";\r\nimport userRoute from \"./routes/userRoute.js\";\r\n\r\n\r\nconst app = express();\r\n\r\n\r\nconst PORT = 3000;\r\n\r\n\r\n// JSON data read karne ke liye\r\napp.use(express.json());\r\n\r\n\r\n// Route\r\napp.use(\"/users\", userRoute);\r\n\r\n\r\n\r\napp.listen(PORT, () => {\r\n\r\n    console.log(`Server running on port ${PORT}`);\r\n\r\n});"
+        }
+    ]
+}

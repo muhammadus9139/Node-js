@@ -1,0 +1,26 @@
+{
+    "sourceFile": "Express-js/Middleware in express js/temp",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1784993658269,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1784993759066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,60 @@\n-30- Middleware in express js , what is middleware, example of middleware, types of middleware.\n\\ No newline at end of file\n+30- Middleware in express js , what is middleware, example of middleware, types of middleware.\r\n+\r\n+\r\n+Middleware kya hota hai?\r\n+\r\n+Middleware ek function hota hai jo request aur response ke beech execute hota hai.\r\n+\r\n+Flow:\r\n+\r\n+Client Request\r\n+       |\r\n+       ↓\r\n+ Middleware\r\n+       |\r\n+       ↓\r\n+ Route\r\n+       |\r\n+       ↓\r\n+ Response\r\n+Middleware function ke parameters:\r\n+(req, res, next)\r\n+req\r\n+\r\n+Request ki information:\r\n+\r\n+req.url\r\n+req.method\r\n+res\r\n+\r\n+Response bhejne ke liye:\r\n+\r\n+res.send()\r\n+next()\r\n+\r\n+Next middleware ya route par jane ke liye.\r\n+\r\n+Example: Logger Middleware\r\n+const logger = (req, res, next) => {\r\n+\r\n+    console.log(req.method);\r\n+    console.log(req.url);\r\n+\r\n+    next();\r\n+\r\n+};\r\n+\r\n+\r\n+app.use(logger);\r\n+\r\n+Agar browser me:\r\n+\r\n+GET /about\r\n+\r\n+open karo to console:\r\n+\r\n+GET\r\n+/about\r\n+\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1784993818184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,4 +57,66 @@\n /about\r\n \r\n \r\n \r\n+////////////////////////////////\r\n+Types of Middleware in Express JS\r\n+1. Application Level Middleware\r\n+\r\n+Pure application par apply hota hai.\r\n+\r\n+Example:\r\n+\r\n+app.use((req,res,next)=>{\r\n+    console.log(\"App Middleware\");\r\n+    next();\r\n+});\r\n+2. Router Level Middleware\r\n+\r\n+Specific router ke liye use hota hai.\r\n+\r\n+Example:\r\n+\r\n+router.use((req,res,next)=>{\r\n+    console.log(\"Router Middleware\");\r\n+    next();\r\n+});\r\n+3. Built-in Middleware\r\n+\r\n+Express ke andar already available.\r\n+\r\n+Example:\r\n+\r\n+JSON data read karna:\r\n+app.use(express.json());\r\n+Static files:\r\n+app.use(express.static(\"public\"));\r\n+4. Third Party Middleware\r\n+\r\n+External packages.\r\n+\r\n+Example:\r\n+\r\n+Install:\r\n+\r\n+npm install morgan\r\n+\r\n+Use:\r\n+\r\n+const morgan = require(\"morgan\");\r\n+\r\n+app.use(morgan(\"dev\"));\r\n+5. Error Handling Middleware\r\n+\r\n+Error handle karta hai.\r\n+\r\n+Structure:\r\n+\r\n+(err, req, res, next)\r\n+\r\n+Example:\r\n+\r\n+app.use((err,req,res,next)=>{\r\n+\r\n+    res.status(500).send(\"Something went wrong\");\r\n+\r\n+});\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1784993658269,
+            "name": "Commit-0",
+            "content": "30- Middleware in express js , what is middleware, example of middleware, types of middleware."
+        }
+    ]
+}

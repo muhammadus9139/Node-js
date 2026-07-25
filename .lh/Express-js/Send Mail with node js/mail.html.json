@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Express-js/Send Mail with node js/mail.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784995724451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784995724451,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html>\r\n\r\n<head>\r\n    <title>Send Mail</title>\r\n</head>\r\n\r\n<body>\r\n\r\n<h1>Send Email</h1>\r\n\r\n\r\n<form action=\"/send-mail\" method=\"POST\">\r\n\r\n<label>Name:</label>\r\n<input type=\"text\" name=\"name\">\r\n\r\n<br><br>\r\n\r\n\r\n<label>Email:</label>\r\n<input type=\"email\" name=\"email\">\r\n\r\n<br><br>\r\n\r\n\r\n<label>Message:</label>\r\n\r\n<textarea name=\"message\"></textarea>\r\n\r\n\r\n<br><br>\r\n\r\n\r\n<button type=\"submit\">\r\nSend Mail\r\n</button>\r\n\r\n\r\n</form>\r\n\r\n\r\n</body>\r\n\r\n</html>"
+        }
+    ]
+}

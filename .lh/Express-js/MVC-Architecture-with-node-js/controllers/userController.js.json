@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Express-js/MVC-Architecture-with-node-js/controllers/userController.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784994833027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784994833027,
+            "name": "Commit-0",
+            "content": "import users from \"../models/userModel.js\";\r\n\r\n\r\n// Get all users\r\n\r\nexport const getUsers = (req,res)=>{\r\n\r\n\r\n    res.json({\r\n        message:\"Users fetched successfully\",\r\n        data: users\r\n    });\r\n\r\n\r\n};\r\n\r\n\r\n\r\n// Get single user\r\n\r\nexport const getUser = (req,res)=>{\r\n\r\n\r\n    const id = req.params.id;\r\n\r\n\r\n    const user = users.find(\r\n        user => user.id == id\r\n    );\r\n\r\n\r\n    res.json({\r\n        data:user\r\n    });\r\n\r\n\r\n};"
+        }
+    ]
+}

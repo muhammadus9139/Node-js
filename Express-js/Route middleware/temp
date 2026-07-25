@@ -1,0 +1,55 @@
+32- Route middleware, what is route middleware, make router middleware, apply route middleware, how to make 2 route middleware and apply.
+
+1 Route Middleware kya hota hai?
+
+Route middleware wo middleware hota hai jo sirf specific route par apply hota hai.
+
+Example:
+
+app.get(
+ "/dashboard",
+ checkLogin,
+ checkAdmin,
+ callback
+);
+
+Yahan middleware sirf /dashboard route par chalega.
+
+Flow:
+Client Request
+       |
+       ↓
+checkLogin Middleware
+       |
+       ↓
+checkAdmin Middleware
+       |
+       ↓
+Dashboard Route
+       |
+       ↓
+Response
+
+
+
+2 Route Middleware apply karna:
+
+Syntax:
+
+app.get(
+"/route",
+middleware1,
+middleware2,
+(req,res)=>{
+    
+});
+
+Example:
+
+app.get(
+"/profile",
+authMiddleware,
+roleMiddleware,
+(req,res)=>{
+    res.send("Profile");
+});

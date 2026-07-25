@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Express-js/Route middleware/temp",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1784993945262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1784994039939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,55 @@\n 32- Route middleware, what is route middleware, make router middleware, apply route middleware, how to make 2 route middleware and apply.\r\n+\r\n+1 Route Middleware kya hota hai?\r\n+\r\n+Route middleware wo middleware hota hai jo sirf specific route par apply hota hai.\r\n+\r\n+Example:\r\n+\r\n+app.get(\r\n+ \"/dashboard\",\r\n+ checkLogin,\r\n+ checkAdmin,\r\n+ callback\r\n+);\r\n+\r\n+Yahan middleware sirf /dashboard route par chalega.\r\n+\r\n+Flow:\r\n+Client Request\r\n+       |\r\n+       ↓\r\n+checkLogin Middleware\r\n+       |\r\n+       ↓\r\n+checkAdmin Middleware\r\n+       |\r\n+       ↓\r\n+Dashboard Route\r\n+       |\r\n+       ↓\r\n+Response\r\n+\r\n+\r\n+\r\n+2 Route Middleware apply karna:\r\n+\r\n+Syntax:\r\n+\r\n+app.get(\r\n+\"/route\",\r\n+middleware1,\r\n+middleware2,\r\n+(req,res)=>{\r\n+    \r\n+});\r\n+\r\n+Example:\r\n+\r\n+app.get(\r\n+\"/profile\",\r\n+authMiddleware,\r\n+roleMiddleware,\r\n+(req,res)=>{\r\n+    res.send(\"Profile\");\r\n+});\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1784993945262,
+            "name": "Commit-0",
+            "content": "32- Route middleware, what is route middleware, make router middleware, apply route middleware, how to make 2 route middleware and apply.\r\n"
+        }
+    ]
+}

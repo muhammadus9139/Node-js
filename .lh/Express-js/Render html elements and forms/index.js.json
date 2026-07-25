@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Express-js/Render html elements and forms/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1784992549852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1784992998307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,15 +13,9 @@\n \r\n // Render HTML Page\r\n app.get(\"/\", (req, res) => {\r\n \r\n-    res.sendFile(\r\n-        path.join(\r\n-            process.cwd(),\r\n-            \"26-Render-HTML-Form\",\r\n-            \"login.html\"\r\n-        )\r\n-    );\r\n+    res.sendFile(path.join(process.cwd(), \"login.html\"));\r\n \r\n });\r\n \r\n \r\n"
+                }
+            ],
+            "date": 1784992549852,
+            "name": "Commit-0",
+            "content": "import express from \"express\";\r\nimport path from \"path\";\r\n\r\n\r\nconst app = express();\r\n\r\nconst PORT = 3000;\r\n\r\n\r\n// Middleware to read form data\r\napp.use(express.urlencoded({ extended: true }));\r\n\r\n\r\n// Render HTML Page\r\napp.get(\"/\", (req, res) => {\r\n\r\n    res.sendFile(\r\n        path.join(\r\n            process.cwd(),\r\n            \"26-Render-HTML-Form\",\r\n            \"login.html\"\r\n        )\r\n    );\r\n\r\n});\r\n\r\n\r\n// Handle POST Request\r\napp.post(\"/login\", (req, res) => {\r\n\r\n\r\n    const email = req.body.email;\r\n    const password = req.body.password;\r\n\r\n\r\n    console.log(\"Email:\", email);\r\n    console.log(\"Password:\", password);\r\n\r\n\r\n    res.send(`\r\n        <h1>Login Successful</h1>\r\n        <p>Email: ${email}</p>\r\n    `);\r\n\r\n\r\n});\r\n\r\n\r\n\r\napp.listen(PORT, () => {\r\n\r\n    console.log(`Server running on port ${PORT}`);\r\n\r\n});"
+        }
+    ]
+}

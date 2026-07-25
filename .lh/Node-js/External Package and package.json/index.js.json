@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Node-js/External Package and package.json/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784988732664,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784988732664,
+            "name": "Commit-0",
+            "content": "import colors from \"colors\";\r\n\r\nconsole.log(\"Node.js External Package\".green);\r\nconsole.log(\"Learning Colors Package\".blue);\r\nconsole.log(\"Success\".bgGreen.black);\r\nconsole.log(\"Warning\".yellow);\r\nconsole.log(\"Error\".red);"
+        }
+    ]
+}
