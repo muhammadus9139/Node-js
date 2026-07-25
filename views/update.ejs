@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update page</title>  
+   <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+     <%- include('navbar') %>
+    <h1>Update task page</h1>
+
+    <div class="add-task-container">
+    <form class="add-task-form" action="/update/<%= result._id %>" method="post">
+        <input value="<%= result.title %>"  type="text" placeholder="Enter task title" name="title">
+
+       <textarea name="description" placeholder="Enter task description"><%= result.description %></textarea>  
+        <!-- here we use above result.discription etc due to , when we click update task and form will opn with already filled data in form , means its purpose is to populate data in the form-->
+
+        <button>Update task</button>
+    </form>
+    </div>
+</body>
+</html>

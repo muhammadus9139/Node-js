@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "startup": {
+    "script": "bun install\n"
+  },
+  "skills": {
+    "preloaded": []
+  }
+}
