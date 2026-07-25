@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Node-js/Modules and Routes/form.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784989952202,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784989952202,
+            "name": "Commit-0",
+            "content": "// Function to make HTML form\r\n\r\nfunction form(req, res){\r\n\r\n    res.write(`\r\n        <html>\r\n        <body>\r\n\r\n        <h1>User Form</h1>\r\n\r\n        <form action=\"/submit\" method=\"POST\">\r\n\r\n            <input type=\"text\" name=\"name\" placeholder=\"Enter Name\">\r\n\r\n            <br><br>\r\n\r\n            <input type=\"email\" name=\"email\" placeholder=\"Enter Email\">\r\n\r\n            <br><br>\r\n\r\n            <button type=\"submit\">\r\n                Submit\r\n            </button>\r\n\r\n        </form>\r\n\r\n        </body>\r\n        </html>\r\n    `);\r\n\r\n    res.end();\r\n}\r\n\r\nmodule.exports = form;"
+        }
+    ]
+}

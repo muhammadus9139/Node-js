@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Node-js/Intro/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784987597190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784987597189,
+            "name": "Commit-0",
+            "content": "// Node.js Introduction\r\n\r\nconsole.log(\"Welcome to Node.js\");\r\nconsole.log(\"This is my first Node.js program.\");\r\n\r\n// Variables\r\nlet studentName = \"Muhammad Usama\";\r\nlet university = \"COMSATS University\";\r\n\r\nconsole.log(\"Student Name:\", studentName);\r\nconsole.log(\"University:\", university);\r\n\r\n// Function\r\nfunction greet(name) {\r\n    console.log(`Hello ${name}, Welcome to Node.js`);\r\n}\r\n\r\ngreet(studentName);\r\n\r\n// Simple Addition\r\nlet num1 = 10;\r\nlet num2 = 20;\r\n\r\nconsole.log(\"Addition =\", num1 + num2);"
+        }
+    ]
+}

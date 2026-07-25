@@ -1,0 +1,17 @@
+# Check Node.js
+node -v
+
+# Check npm
+npm -v
+
+# Create Folder
+mkdir "03 First App with Node"
+
+# Move into Folder
+cd "03 First App with Node"
+
+# Create File
+ni index.js
+
+# Run Program
+node index.js
