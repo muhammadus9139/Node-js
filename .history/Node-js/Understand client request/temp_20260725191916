@@ -1,7 +1,0 @@
-12- Understand client request, what is client request, write code to access client request, make a pages with client request
-
-Test in Browser
-http://localhost:3000/
-http://localhost:3000/about
-http://localhost:3000/contact
-http://localhost:3000/xyz
