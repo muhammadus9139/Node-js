@@ -1,8 +1,0 @@
-# Create package.json
-npm init -y
-
-# Install colors package
-npm install colors
-
-# Run Program
-node index.js

@@ -1,9 +1,0 @@
-25- use ES import and export, understand issue, make changes in package.json, update way of importing file, make function and import them.
-
-
-Difference:
-CommonJS	ES Module
-require()	import
-module.exports	export
-Default Node style	Modern JS style
-No package.json change	"type":"module" required
