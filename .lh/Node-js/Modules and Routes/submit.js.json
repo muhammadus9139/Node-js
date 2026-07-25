@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Node-js/Modules and Routes/submit.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784989968804,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784989968804,
+            "name": "Commit-0",
+            "content": "// File for submit route\r\n\r\nfunction submit(req, res){\r\n\r\n    let data = [];\r\n\r\n    req.on('data', (chunk)=>{\r\n        data.push(chunk);\r\n    });\r\n\r\n    req.on('end', ()=>{\r\n\r\n        let bufferData = Buffer.concat(data);\r\n        let readableData = bufferData.toString();\r\n\r\n        console.log(readableData);\r\n\r\n        res.write(\"Form submitted successfully\");\r\n        res.end();\r\n\r\n    });\r\n\r\n}\r\n\r\nmodule.exports = submit;"
+        }
+    ]
+}

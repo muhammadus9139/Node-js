@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Express-js/Set and get cookies in node js/temp",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784995552046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784995552046,
+            "name": "Commit-0",
+            "content": "61- Set and get cookies in node js, what are cookies, make html form, set cookies, check cookies are stored or not , display cookies data on UI.\r\n"
+        }
+    ]
+}

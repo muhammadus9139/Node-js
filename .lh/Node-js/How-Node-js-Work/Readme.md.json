@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Node-js/How-Node-js-Work/Readme.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784989848387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784989848387,
+            "name": "Commit-0",
+            "content": "# How Node.js Work\r\n\r\nNode.js is a JavaScript runtime environment that allows us to run JavaScript code outside the browser.\r\n\r\n## Working of Node.js\r\n\r\n1. Client sends a request to Node.js server.\r\n\r\n2. Node.js receives the request using HTTP module.\r\n\r\n3. Request goes to Event Loop.\r\n\r\n4. Event Loop checks whether the task is blocking or non-blocking.\r\n\r\n5. If task is simple, Event Loop handles it directly.\r\n\r\n6. If task is heavy (file system, database, API call), Node.js sends it to background workers.\r\n\r\n7. After completing the task, callback is added to Event Queue.\r\n\r\n8. Event Loop takes the callback and sends the response back to the client.\r\n\r\n\r\n## Main Components of Node.js\r\n\r\n### 1. V8 Engine\r\n- Converts JavaScript code into machine code.\r\n- Provided by Google Chrome.\r\n\r\n### 2. Event Loop\r\n- Handles multiple requests.\r\n- Makes Node.js asynchronous and non-blocking.\r\n\r\n### 3. Callback Queue\r\n- Stores completed tasks waiting for execution.\r\n\r\n### 4. Thread Pool\r\n- Handles heavy operations like:\r\n  - File System\r\n  - Database operations\r\n  - Encryption\r\n\r\n\r\n## Example Flow\r\n\r\nClient Request\r\n        |\r\n        ↓\r\n Node.js Server\r\n        |\r\n        ↓\r\n Event Loop\r\n        |\r\n        ↓\r\n Background Task\r\n        |\r\n        ↓\r\n Callback Queue\r\n        |\r\n        ↓\r\n Response to Client\r\n\r\n\r\n## Why Node.js is Fast?\r\n\r\n- Single threaded architecture\r\n- Non-blocking I/O\r\n- Asynchronous operations\r\n- Event-driven architecture"
+        }
+    ]
+}

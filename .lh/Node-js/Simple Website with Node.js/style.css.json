@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Node-js/Simple Website with Node.js/style.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784990188503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784990188503,
+            "name": "Commit-0",
+            "content": "body{\r\n\r\n    background-color: lightblue;\r\n    text-align: center;\r\n    font-family: Arial;\r\n\r\n}\r\n\r\n\r\nh1{\r\n\r\n    color: darkblue;\r\n\r\n}\r\n\r\n\r\np{\r\n\r\n    font-size: 20px;\r\n\r\n}"
+        }
+    ]
+}

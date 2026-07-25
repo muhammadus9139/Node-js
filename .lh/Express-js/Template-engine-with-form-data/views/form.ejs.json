@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Express-js/Template-engine-with-form-data/views/form.ejs",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784994599122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784994599122,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html>\r\n\r\n<head>\r\n    <title>Form with EJS</title>\r\n</head>\r\n\r\n<body>\r\n\r\n\r\n<h1>User Form</h1>\r\n\r\n\r\n<form action=\"/submit\" method=\"POST\">\r\n\r\n    <label>\r\n        Username:\r\n    </label>\r\n\r\n    <input \r\n    type=\"text\" \r\n    name=\"username\">\r\n\r\n\r\n    <br><br>\r\n\r\n\r\n    <label>\r\n        Email:\r\n    </label>\r\n\r\n    <input \r\n    type=\"email\" \r\n    name=\"email\">\r\n\r\n\r\n    <br><br>\r\n\r\n\r\n    <button type=\"submit\">\r\n        Submit\r\n    </button>\r\n\r\n\r\n</form>\r\n\r\n\r\n</body>\r\n\r\n</html>"
+        }
+    ]
+}

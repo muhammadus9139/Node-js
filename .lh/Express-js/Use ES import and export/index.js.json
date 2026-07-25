@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Express-js/Use ES import and export/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784992291521,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784992291521,
+            "name": "Commit-0",
+            "content": "import express from \"express\";\r\n\r\nimport { add, subtract } from \"./math.js\";\r\n\r\n\r\nconst app = express();\r\n\r\n\r\nconst PORT = 3000;\r\n\r\n\r\napp.get(\"/\", (req, res) => {\r\n\r\n\r\n    let sum = add(10, 5);\r\n\r\n    let minus = subtract(10, 5);\r\n\r\n\r\n    res.send(`\r\n        Addition: ${sum}\r\n        <br>\r\n        Subtraction: ${minus}\r\n    `);\r\n\r\n});\r\n\r\n\r\napp.listen(PORT, () => {\r\n\r\n    console.log(`Server running on ${PORT}`);\r\n\r\n});"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Node-js/Path-Module-And-Global-Constant/temp",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784990326426,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784990326426,
+            "name": "Commit-0",
+            "content": "22- Path module and global constant, what is path module, what is global constant, example of both.\r\n\r\n"
+        }
+    ]
+}

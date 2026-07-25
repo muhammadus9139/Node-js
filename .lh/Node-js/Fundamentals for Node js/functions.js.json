@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Node-js/Fundamentals for Node js/functions.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784988458934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784988458934,
+            "name": "Commit-0",
+            "content": "// Functions\r\n\r\nexport function add(a, b) {\r\n    return a + b;\r\n}\r\n\r\nexport function multiply(a, b) {\r\n    return a * b;\r\n}\r\n\r\nexport function greet(name) {\r\n    return `Hello ${name}`;\r\n}"
+        }
+    ]
+}

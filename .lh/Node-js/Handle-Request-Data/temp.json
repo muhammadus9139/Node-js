@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Node-js/Handle-Request-Data/temp",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784989698885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784989698885,
+            "name": "Commit-0",
+            "content": "16- Handle from request data, get data from request, handle data with buffer class, make request data readable."
+        }
+    ]
+}

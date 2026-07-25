@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Express-js/Set and get cookies in node js/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784995593092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784995593092,
+            "name": "Commit-0",
+            "content": "import express from \"express\";\r\nimport cookieParser from \"cookie-parser\";\r\nimport path from \"path\";\r\n\r\nconst app = express();\r\n\r\napp.use(express.urlencoded({extended:true}));\r\n\r\napp.use(cookieParser());\r\n\r\n\r\napp.get(\"/\", (req,res)=>{\r\n\r\n    res.sendFile(\r\n        path.join(process.cwd(),\"login.html\")\r\n    );\r\n\r\n});\r\n\r\n\r\n// Set Cookies\r\n\r\napp.post(\"/login\",(req,res)=>{\r\n\r\n    const {name,email}=req.body;\r\n\r\n\r\n    res.cookie(\"userName\",name);\r\n\r\n    res.cookie(\"userEmail\",email);\r\n\r\n\r\n    res.send(`\r\n        <h1>Cookies Stored</h1>\r\n        <p>Name: ${name}</p>\r\n        <p>Email: ${email}</p>\r\n        <a href=\"/profile\">Check Cookies</a>\r\n    `);\r\n\r\n});\r\n\r\n\r\n// Get Cookies\r\n\r\napp.get(\"/profile\",(req,res)=>{\r\n\r\n\r\n    const name=req.cookies.userName;\r\n    const email=req.cookies.userEmail;\r\n\r\n\r\n    res.send(`\r\n\r\n        <h1>User Profile</h1>\r\n\r\n        <p>Name: ${name}</p>\r\n\r\n        <p>Email: ${email}</p>\r\n\r\n    `);\r\n\r\n\r\n});\r\n\r\n\r\napp.listen(3000,()=>{\r\n\r\n    console.log(\"Server running on port 3000\");\r\n\r\n});"
+        }
+    ]
+}

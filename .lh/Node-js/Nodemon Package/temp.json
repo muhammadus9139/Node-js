@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Node-js/Nodemon Package/temp",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784988915815,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784988915815,
+            "name": "Commit-0",
+            "content": "9- Nodemon Package, why we need nodemon package, how to install, how to use nodemon."
+        }
+    ]
+}

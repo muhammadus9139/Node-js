@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Express-js/Send Mail with node js/temp",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1784995694163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1784995713762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,20 @@\n 63-  Send Mail with node js, install package , create gmail app for send mails, write code, send mail with form, send mail with API.\r\n+\r\n+\r\n+////////\r\n+Step 1: Gmail App Password Create Karna\r\n+\r\n+Normal Gmail password use nahi hota.\r\n+\r\n+Steps:\r\n+\r\n+Gmail account open karo\r\n+Google Account → Security\r\n+2-Step Verification ON karo\r\n+App Passwords open karo\r\n+New App Password banao\r\n+16 digit password milega\r\n+\r\n+Example:\r\n+\r\n+abcd efgh ijkl mnop\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1784995694163,
+            "name": "Commit-0",
+            "content": "63-  Send Mail with node js, install package , create gmail app for send mails, write code, send mail with form, send mail with API.\r\n"
+        }
+    ]
+}

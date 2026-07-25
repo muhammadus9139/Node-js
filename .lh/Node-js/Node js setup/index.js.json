@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Node-js/Node js setup/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784987772338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784987772338,
+            "name": "Commit-0",
+            "content": "// Node.js Setup\r\n\r\nconsole.log(\"Node.js Setup Completed Successfully!\");\r\n\r\nconsole.log(\"Node Version:\", process.version);\r\nconsole.log(\"Operating System:\", process.platform);\r\nconsole.log(\"Current Working Directory:\", process.cwd());\r\n\r\nconsole.log(\"Node.js is Ready for Development.\");"
+        }
+    ]
+}

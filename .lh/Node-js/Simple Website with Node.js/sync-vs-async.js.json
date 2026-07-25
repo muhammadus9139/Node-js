@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Node-js/Simple Website with Node.js/sync-vs-async.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784990279190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784990279190,
+            "name": "Commit-0",
+            "content": "// sync\r\n\r\nconst fs = require('fs');\r\n\r\nlet data = fs.readFileSync(\"data.txt\",\"utf-8\");\r\n\r\nconsole.log(data);\r\n\r\nconsole.log(\"Next task\");\r\n\r\n// async\r\n\r\nconst fs = require('fs');\r\n\r\n\r\nfs.readFile(\"data.txt\",\"utf-8\",(err,data)=>{\r\n\r\n    console.log(data);\r\n\r\n});\r\n\r\n\r\nconsole.log(\"Next task\");"
+        }
+    ]
+}

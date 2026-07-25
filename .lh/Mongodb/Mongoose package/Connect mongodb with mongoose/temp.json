@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Mongodb/Mongoose package/Connect mongodb with mongoose/temp",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784997816599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784997816599,
+            "name": "Commit-0",
+            "content": "Connect mongodb with mongoose using mongoose package, install mongoose npm package, connect node with mongodb, write schema for collection, fetch data and check output"
+        }
+    ]
+}

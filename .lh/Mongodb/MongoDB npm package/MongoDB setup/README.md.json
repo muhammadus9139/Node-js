@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Mongodb/MongoDB npm package/MongoDB setup/README.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784996741560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784996741560,
+            "name": "Commit-0",
+            "content": "# MongoDB Setup\r\n\r\n## What is MongoDB Setup?\r\n\r\nMongoDB setup means installing MongoDB on the system and preparing it to store and manage databases.\r\n\r\n---\r\n\r\n# Install MongoDB\r\n\r\n## Windows Installation\r\n\r\n1. Download MongoDB Community Server\r\n2. Install MongoDB\r\n3. Install MongoDB Compass\r\n4. Start MongoDB service\r\n\r\n---\r\n\r\n# MongoDB Commands\r\n\r\n## Check MongoDB Version\r\n\r\nCommand:\r\n\r\nmongod --version\r\n\r\n\r\n## Start MongoDB Server\r\n\r\nCommand:\r\n\r\nmongod\r\n\r\n\r\n## Open MongoDB Shell\r\n\r\nCommand:\r\n\r\nmongosh\r\n\r\n\r\n## Check Databases\r\n\r\nCommand:\r\n\r\nshow dbs\r\n\r\n\r\n## Create Database\r\n\r\nCommand:\r\n\r\nuse databaseName\r\n\r\n\r\n## Check Current Database\r\n\r\nCommand:\r\n\r\ndb\r\n\r\n\r\n---\r\n\r\n# MongoDB Compass\r\n\r\nMongoDB Compass is a GUI tool for MongoDB.\r\n\r\nIt allows us to:\r\n\r\n- View databases\r\n- Create collections\r\n- Insert documents\r\n- Update data\r\n- Delete data\r\n- Run queries\r\n\r\n\r\nConnection:\r\n\r\nmongodb://127.0.0.1:27017\r\n"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Express-js/Built-in middleware in express js/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784994116448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784994116448,
+            "name": "Commit-0",
+            "content": "const express = require(\"express\");\r\n\r\nconst app = express();\r\n\r\nconst port = 3000;\r\n\r\n\r\n// Built-in Middleware 1\r\n// Handle JSON data\r\n\r\napp.use(express.json());\r\n\r\n\r\n// Built-in Middleware 2\r\n// Serve static files\r\n\r\napp.use(express.static(\"public\"));\r\n\r\n\r\n// Route\r\n\r\napp.get(\"/\", (req, res) => {\r\n\r\n    res.send(`\r\n        <h1>Express Built-in Middleware</h1>\r\n        <p>CSS is loaded using express.static()</p>\r\n        <link rel=\"stylesheet\" href=\"style.css\">\r\n    `);\r\n\r\n});\r\n\r\n\r\n// JSON Data Route\r\n\r\napp.post(\"/user\", (req, res) => {\r\n\r\n    console.log(req.body);\r\n\r\n    res.send({\r\n        message: \"Data received\",\r\n        data: req.body\r\n    });\r\n\r\n});\r\n\r\n\r\napp.listen(port, () => {\r\n\r\n    console.log(`Server running on port ${port}`);\r\n\r\n});"
+        }
+    ]
+}

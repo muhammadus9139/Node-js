@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Express-js/External middleware in express js/temp",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1784994331893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1784994331893,
+            "name": "Commit-0",
+            "content": "34- External middleware in express js, what is external middleware, install and use external middleware.\r\n"
+        }
+    ]
+}
